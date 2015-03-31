@@ -2,7 +2,7 @@ minimal-webindexer
 ==================
 
 minimal-webindexer is a simple web indexer for static web pages. minimal-webindexer
-is written in Python. At the current stage, the indexer only indexs a list of URLs
+is written in Python. At the current stage, the indexer only indexes a list of URLs
 from a sitemap file.
 
 Requirements
@@ -10,6 +10,33 @@ Requirements
 
 - [Whoosh](https://pythonhosted.org/Whoosh/) - Indexer in Python
 - [requests](http://docs.python-requests.org/en/latest/) - Requests: HTTP for Humans
+
+Install
+=======
+
+~~~
+ pip install -r requirements
+~~~
+
+Usage
+=====
+
+Start the indexer:
+
+~~~
+ python bin/sitemap-crawler.py -u http://<yourwebsite>/sitemap.xml
+~~~
+
+Search via the test web interface:
+
+~~~
+ cd web
+ python index.py
+ open index.html
+~~~
+
+Adapt the index.html to your needs and the results template.
+
 
 License
 =======
