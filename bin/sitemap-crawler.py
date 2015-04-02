@@ -1,3 +1,7 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+#
+
 import os
 import sys
 runPath = os.path.dirname(os.path.realpath(__file__))
