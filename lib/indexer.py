@@ -1,3 +1,7 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+#
+
 import os
 
 
@@ -29,4 +33,7 @@ class index:
 if __name__ == "__main__":
     i = index()
     i.add(DocumentID=u"http://www.foo.be/", Content=u"this is a test indexing of a random content", Title=u"test homepage")
+    i.close()
+    i = index()
+    i.add(DocumentID=u"http://news.ycombinator.com", Content=u"Test école texte", Title=u"Titre")
     i.close()

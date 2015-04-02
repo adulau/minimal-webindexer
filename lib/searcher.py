@@ -1,3 +1,7 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+#
+
 from whoosh.qparser import QueryParser
 from whoosh import index
 
